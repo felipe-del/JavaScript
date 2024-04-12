@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos del Formulario</title>
+    <link rel="stylesheet" href="e25.css">
+</head>
+<body>
+<h1>Contando desde 0 hasta un número positivo cualquiera</h1>
+<p>Elige el límite final para contar desde 0 (ingresa solo números positivos)</p>
+<section id="entrada">
+    <!-- Si deseas obtener más información sobre el uso de formularios, consulta nuestro repositorio de clases de HTML5 y CSS3 -->
+    <form action="#" method="get">
+        <!-- El método GET envía los datos a través de la propia URL durante la llamada -->
+        <label for="fnum">Valor final: </label>
+        <input type="number" name="num" id="fnum" placeholder="Solo positivos">
+        <!-- El nombre de un objeto se usa más en otros lenguajes (como PHP), mientras que el ID se usará más en JavaScript -->
+        <input type="submit" value="Contar" formaction="javascript:contagem()">
+        <!-- Al usar FORMACTION, es necesario colocar javascript: antes del nombre de la función -->
+    </form>
+</section>
+<section id="saida">
+    <p>Rellena los datos anteriores y pulsa el botón.</p>
+</section>
+
+<script src="e25.js"></script>
+</body>
+</html>

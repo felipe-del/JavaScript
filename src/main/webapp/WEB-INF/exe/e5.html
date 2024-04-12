@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números con JS</title>
+    <style>
+        body { font: 12pt Arial; }
+        button { font-size: 12pt; padding: 30px; }
+    </style>
+</head>
+<body>
+<h1>Trabajando con números</h1>
+<button onclick="calcular()">Haz clic para calcular</button>
+<section id="res">
+    <p>El resultado aparecerá aquí...</p>
+</section>
+
+<script>
+    // Lo que está aquí afuera se ejecutará automáticamente, SIEMPRE que se cargue el sitio web
+    window.alert('¡Bienvenido(a) a mi sitio web!')
+    // Mientras que la función calcular() solo se ejecutará cuando el usuario presione el botón
+    function calcular() {
+        let n1 = Number(window.prompt('Ingresa un número: '))
+        let res = document.querySelector('section#res')
+
+        res.innerHTML = `<p>¡El doble de ${n1} es ${n1*2} y la mitad es ${n1/2}!</p>`
+    }
+</script>
+</body>
+</html>

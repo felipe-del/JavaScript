@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números con JS</title>
+    <style>
+        body { font: 12pt Arial; }
+        button { font-size: 12pt; padding: 30px; }
+    </style>
+</head>
+<body>
+<h1>Varios cálculos en JS</h1>
+<button onclick="calcular()">Haz clic para calcular</button>
+<section id="result">
+    <p>El resultado aparecerá aquí...</p>
+</section>
+
+<script>
+    function calcular() {
+        let num = Number(window.prompt('Ingresa un número: '))
+
+        let res = document.querySelector('section#result')
+        res.innerHTML = `<p>El número a ser analizado aquí será el <strong>${num}</strong></p><hr>`
+        res.innerHTML += `<p>Su valor absoluto es ${Math.abs(num)}</p>`
+        res.innerHTML += `<p>Su parte entera es ${Math.trunc(num)}</p>`
+        res.innerHTML += `<p>El valor entero más cercano es ${Math.round(num)}</p>`
+        res.innerHTML += `<p>Su raíz cuadrada es ${Math.sqrt(num)}</p>`
+        res.innerHTML += `<p>Su raíz cúbica es ${Math.cbrt(num)}</p>`
+        res.innerHTML += `<p>El valor de ${num}<sup>2</sup> es ${Math.pow(num, 2)}</p>`
+        res.innerHTML += `<p>El valor de ${num}<sup>3</sup> es ${Math.pow(num, 3)}</p>`
+    }
+</script>
+</body>
+</html>

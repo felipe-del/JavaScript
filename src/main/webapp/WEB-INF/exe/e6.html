@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números con JS</title>
+    <style>
+        body { font: 12pt Arial; }
+        button { font-size: 12pt; padding: 30px; }
+    </style>
+</head>
+<body>
+<h1>Sumando dos números</h1>
+<button onclick="sumar()">Iniciar suma</button>
+<section id="res">
+    <p>El resultado aparecerá aquí...</p>
+</section>
+
+<script>
+
+    function sumar() {
+        let n1 = Number(window.prompt('Ingresa un número: '))
+        let n2 = Number(window.prompt('Ingresa otro número:'))
+        suma = n1 + n2
+
+        let res = document.querySelector('section#res')
+        res.innerHTML = `<p>La suma de <mark>${n1}</mark> y <mark>${n2}</mark> es igual a <strong>${suma}</strong>!</p>`
+    }
+</script>
+</body>
+</html>

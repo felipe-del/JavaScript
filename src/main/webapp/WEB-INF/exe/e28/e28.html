@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+    <link rel="stylesheet" href="e28.css">
+</head>
+<body>
+<h1>Calculadora de Factoriales</h1>
+<p>Escribe un número (entre 1 y 21) en el siguiente campo y te mostraré su factorial.</p>
+<section id="entrada">
+    <form action="#" method="get">
+        <p>
+            <label for="fnum">Número: </label>
+            <input type="number" name="num" id="fnum" max="21" min="1" placeholder="Número: ">
+            <!-- Vamos a limitar los números entre 1 y 21, ya que no existe el factorial de un número negativo (0! = 1) y el factorial de 22 es un número demasiado grande para representarlo de manera sencilla en la pantalla -->
+            <input type="submit" value="Calcular Factorial" formaction="javascript:fatorial()">
+        </p>
+    </form>
+</section>
+<section id="saida">
+    <p>Rellena los datos anteriores y pulsa el botón.</p>
+</section>
+
+<script src="e28.js"></script>
+</body>
+</html>
